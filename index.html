@@ -1,0 +1,551 @@
+
+
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Inicio </title>
+
+    <!-- LIBRERIA DE JQUERY -->
+    <link rel="stylesheet" 
+    href="public/js/jquery-3.7.1.min.js">
+
+    <!-- LIBRERIA DE BOOTSTRAP -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+    <!-- ICONOS DE BOOTSTRAP -->
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="public/css/style.css">
+
+    
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg bg-body-ligh">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="public/images/logotienda.png"
+                     alt="Logo" width="80" height="80" class="d-inline-block " >
+                Servicios<span style="color: blue;">Disponibles</span>  
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary text-black" aria-current="page" href="#"> <i class="bi bi-house-fill"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary text-black" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-outline-primary text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nuestros Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Servicios Web</a></li>
+                            <li><a class="dropdown-item" href="#">Servicios de Streaming</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Servicios Hogar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-outline-primary text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Proximamente
+                        </a>
+                        <ul class="dropdown-menu pace-inactive">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <div class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary text-black" type="submit">Buscar</button>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-primary text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ingresar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="login/registro.php">Registrarme</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    </header>
+
+    
+
+    <main>
+
+      <section class="carruserl">
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" 
+            data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" 
+            data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" 
+            data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="public/images/promocioncuentas.jpeg" 
+              height="600px" class="d-block w-100" alt="...">
+              <div class="carousel-caption ">
+                <a href="https://wa.me/+573235303818?text=hola%20servicios%20disponibles%20quiero%20reservar%20una%20cita"class="btn btn-light btn-outline-primary text-black" >Ver Productos</a>
+                <br><br>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="public/images/suit.jpg" 
+              height="600px" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <br><br>
+                <a href="#"class="btn btn-light btn-outline-primary text-black" >Ver Tienda</a>
+                <h5 class="text-black">Conoce nuestros productos</h5>
+                <b class="text-black">Servicio a domicilio de los productos de la tienda.</b>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="public/images/paginaweb.jpg" 
+              height="600px" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <br>
+                <a href="#"class="btn btn-light btn-outline-primary text-black" ><b>Creamos tu pagina Web</b></a>
+              </div>             
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" 
+          data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" 
+          data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </section>
+      
+      <section class="info">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <center>
+                <br><br><br>
+                <img src="public/images/security.png" width="100%" alt="">
+              </center>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+              <br><br><br>
+              <h1>Acerca de nuestra 
+                <span style="color: rgb(29, 29, 199);">Empresa</span></h1>
+                <br><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa optio, illo dolor quam maxime similique minus. Porro officia, autem velit 
+                  repellendus ad in soluta delectus voluptatibus accusantium tempore, quaerat ea?</p>
+                  <a href="#" class="btn btn-outline-primary">Mas sobre nosotros</a>
+                  <br><br>
+            </div>
+          </div>
+          <br><br><br>
+        </div>
+
+      </section>
+
+      <section class="otros_servicos">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <br><br>
+              <h1>Nuestros <b style="color: blue;">servicios</b></h1>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-md-3 zoomP">
+              <div class="card">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-veterinario_114360-3007.jpg?size=626&ext=jpg&ga=GA1.1.90707260.1695572927&semt=sph" 
+                height="240px" class="card-img-top" alt="...">
+                <center>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </center>
+              </div>
+              <br>
+            </div>
+            <div class="col-md-3 zoomP">
+              <div class="card">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-hospital_53876-81075.jpg?size=626&ext=jpg&ga=GA1.1.90707260.1695572927&semt=sph" 
+                height="240px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div class="col-md-3 zoomP">
+              <div class="card">
+                <img src="https://img.freepik.com/vector-gratis/servicio-o-plataforma-linea-veterinarios-mascotas-medico-veterinario-que-verifica-animales-tratamiento-medico-vacunacion-llamada-linea-ilustracion-plana-vectorial_613284-1764.jpg?size=626&ext=jpg&ga=GA1.1.90707260.1695572927&semt=ais" 
+                height="240px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div class="col-md-3 zoomP">
+              <img src="https://img.freepik.com/vector-gratis/accesorios-cuidado-mascotas-ilustracion-marco-redondo_1284-16003.jpg?size=626&ext=jpg&ga=GA1.2.90707260.1695572927&semt=ais"
+              width="100%" height="100%" alt="">
+            
+            </div>
+          </div>
+
+        </div>
+        <br>
+
+      </section>
+
+      <section class="galeria">
+
+        <div class="container">
+          
+          <br><br>
+              <h1>Visita nuestra  <b style="color: blue;">Galeria</b></h1>
+          <br><br>
+
+          <div class="row">
+
+            <div class="col-md-4 zoomP" >
+              <center>
+                <img src="https://cdn.pixabay.com/photo/2020/05/11/18/45/cute-5159724_640.jpg" 
+                width="100%" height="280px" alt="">
+              </center>
+              <br>
+            </div>
+
+            <div class="col-md-8 zoomP">
+              <center>
+                <img src="https://img.freepik.com/foto-gratis/retrato-grupo-adorables-cachorros_53876-64778.jpg?size=626&ext=jpg&ga=GA1.1.1361856692.1695592817&semt=sph" 
+                width="100%" height="280px" alt="">                
+              </center>
+              <br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 zoomP">
+              <center>
+                <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-perro_23-2149100186.jpg?size=626&ext=jpg&ga=GA1.1.1361856692.1695592817&semt=sph" 
+                width="100%" height="280px" alt="">
+              </center>
+              <br>
+            </div>
+            <div class="col-md-4 zoomP">
+              <center>
+                <img src="https://img.freepik.com/fotos-premium/mujer-veterinaria-dando-gato-pildora-prescrita-clinica-recortada_116547-71248.jpg?size=626&ext=jpg&ga=GA1.1.1361856692.1695592817&semt=sph" 
+                width="100%" height="280px" alt="">
+              </center>
+              <br>
+            </div>
+            <div class="col-md-4 zoomP">
+              <center>
+                <img src="https://img.freepik.com/foto-gratis/hermoso-retrato-mascota-perro_23-2149218454.jpg?size=626&ext=jpg&ga=GA1.1.1361856692.1695592817&semt=sph" 
+                width="100%" height="280px" alt="">
+              </center>
+              <br>
+            </div>
+            
+          </div>
+
+
+        </div>
+        <br><br>
+
+      </section>
+
+      <section class="clientes">
+        <div class="container">
+            <br><br>
+            <h1 style="text-align: center">Testimonios de Clientes</h1> <br><br>
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/foto-gratis/cerca-veterinario-cuidando-mascota_23-2149143882.jpg?size=626&ext=jpg&ga=GA1.1.350373150.1670295459&semt=sph"
+                                             height="220px" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="">
+          <br><br><h1 style="text-align: center">Encuentranos aquí</h1> <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0461671161183!2d-75.57604602654064!3d6.2576490261988145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fd42ba10ff%3A0xacfa3d93d9cb352d!2sPlaza%20Minorista%20Jos%C3%A9%20Mar%C3%ADa%20Villa!5e0!3m2!1ses-419!2sco!4v1695601803653!5m2!1ses-419!2sco" 
+          width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section class="contactos">
+        <div class="container">
+            <br><br><h1 style="text-align: center">Contactanos</h1><br><br>
+            <div class="row">
+                <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <center><b>Servicios Disponibles</b></center>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <label for=""><b>Nombre</b></label>
+                                        <input type="text" class="form-control" placeholder="Escribe tu nombre...">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for=""><b>Correo</b></label>
+                                        <input type="email" class="form-control" placeholder="Escribe tu correo...">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for=""><b>Mensaje</b></label>
+                                        <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                    <hr>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary" type="submit">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-4"></div>
+            </div>
+            <br><br>
+        </div>
+        </section>
+        
+        <footer class="container-fluid footer">
+        <div class="container">
+            <br><br>
+            <div class="row">
+                <div class="col-md-4">
+                  <br><br><br><br>
+                    <center>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
+                        ANd9GcTrhjBJW0N21rfhqhetJyTEVNSHXnDiogTgZUTfV26Dz84RsrTrHduuN-ttb8hg-MgGCbs&usqp=CAU" width="50%" alt="">
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <h3><b>Veterinaria Pert Cart</b></h3>
+                    <br>
+                    <p>
+                        <a href="" style="color: white">
+                            Inicio
+                        </a> <br><br>
+                        <a href="" style="color: white">
+                            Sobre nosotros
+                        </a> <br><br>
+                        <a href="" style="color: white">
+                            Galeria
+                        </a> <br><br>
+                        <a href="" style="color: white">
+                            Tetimonios de los clientes
+                        </a> <br><br>
+                        <a href="" style="color: white">
+                            Tienda en linea
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <b> <i class="bi bi-person-badge-fill"></i> Propietario: </b><br><br> Servicios Disponibles <br> Y <br> Servicios Web <br><br>
+                    <b> <i class="bi bi-whatsapp"></i> Whatsapp: </b>+57 3235303818 <br><br>
+                    <b> <i class="bi bi-envelope-open-fill"></i> Correo electronico: </b>stek-04@hotmail.com<br><br>
+        
+                </div>
+            </div>
+        </div>
+            <br>
+        </footer>
+        <div class="container-fluid" style="background-color: #000000;color: white">
+            <br>
+        <p style="text-align: center">©Serviciosdisponibles Todos los derechos reservado 2023</p>
+            <br>
+        </div>
+        
+
+    </main>
+
+  </body>
+  <br><br>
+
+  <!-- LIBRERIA DE BOOTSTRAP -->
+  <script src="public/js/bootstrap.bundle.min.js" 
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+  crossorigin="anonymous">
+  </script>
+
+</html>
