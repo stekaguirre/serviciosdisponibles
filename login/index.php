@@ -60,6 +60,7 @@ include ('../app/config.php');
         </div>
         <!-- /.login-card-body -->
     </div>
+    <br><br>
 </div>
 <!-- /.login-box -->
 
